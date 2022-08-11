@@ -19,6 +19,11 @@ db.init_app(app)
 	
 
 
+@app.errorhandler
+@app.route("/",methods=["GET"])
+def index():
+	return "<h3> Hi Welcome to Skinny assignment </h3>"
+
 
 
 
